@@ -14,7 +14,7 @@
       "ci": {
         "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
         "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
-        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812894045"
       },
       "gitCommit": {
         "shortHash": "25dfef4",
@@ -65,7 +65,7 @@
           "ci": {
             "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
             "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812894045"
           },
           "gitCommit": {
             "shortHash": "25dfef4",
@@ -103,7 +103,7 @@
           "ci": {
             "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
             "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812894045"
           },
           "gitCommit": {
             "shortHash": "25dfef4",
@@ -141,7 +141,7 @@
           "ci": {
             "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
             "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812894045"
           },
           "gitCommit": {
             "shortHash": "25dfef4",
@@ -202,12 +202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 379,
+                  "duration": 384,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T18:31:30.034Z",
+                  "startTime": "2025-08-07T18:38:49.037Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -236,12 +236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 402,
+                  "duration": 388,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T18:31:30.516Z",
+                  "startTime": "2025-08-07T18:38:49.495Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -270,12 +270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 538,
+                  "duration": 582,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T18:31:30.924Z",
+                  "startTime": "2025-08-07T18:38:49.892Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -312,12 +312,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1536,
+                  "duration": 479,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T18:31:31.468Z",
+                  "startTime": "2025-08-07T18:38:50.479Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -354,12 +354,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 376,
+                  "duration": 352,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T18:31:33.009Z",
+                  "startTime": "2025-08-07T18:38:50.964Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -396,7 +396,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 5693,
+                  "duration": 5778,
                   "error": {
                     "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n",
                     "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22",
@@ -420,7 +420,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T18:31:33.390Z",
+                  "startTime": "2025-08-07T18:38:51.321Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -475,12 +475,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2049,
+                      "duration": 1678,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:39.616Z",
+                      "startTime": "2025-08-07T18:38:57.650Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -509,12 +509,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1952,
+                      "duration": 1688,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:41.734Z",
+                      "startTime": "2025-08-07T18:38:59.393Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -543,12 +543,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1304,
+                      "duration": 1074,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:43.692Z",
+                      "startTime": "2025-08-07T18:39:01.088Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -577,12 +577,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1433,
+                      "duration": 1150,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:45.001Z",
+                      "startTime": "2025-08-07T18:39:02.166Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -611,12 +611,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1355,
+                      "duration": 1033,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:46.439Z",
+                      "startTime": "2025-08-07T18:39:03.321Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -645,12 +645,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1450,
+                      "duration": 1117,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:47.801Z",
+                      "startTime": "2025-08-07T18:39:04.359Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -696,12 +696,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 807,
+                      "duration": 607,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:49.258Z",
+                      "startTime": "2025-08-07T18:39:05.484Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -730,12 +730,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 850,
+                      "duration": 598,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:50.077Z",
+                      "startTime": "2025-08-07T18:39:06.095Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -764,12 +764,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 830,
+                      "duration": 565,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T18:31:50.932Z",
+                      "startTime": "2025-08-07T18:39:06.698Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -789,8 +789,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T18:31:29.369Z",
-    "duration": 22438.175,
+    "startTime": "2025-08-07T18:38:48.365Z",
+    "duration": 18937.176,
     "expected": 14,
     "skipped": 0,
     "unexpected": 1,
