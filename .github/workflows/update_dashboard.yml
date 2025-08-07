@@ -6,7 +6,7 @@ on:
       - 'Reports/**'
 
 permissions:
-  contents: read
+  contents: write  # ✅ Give write permission to push changes
 
 jobs:
   update:
@@ -19,13 +19,16 @@ jobs:
         with:
           python-version: 3.11
 
-      - run: pip install jinja2
+      - name: Install dependencies
+        run: pip install jinja2
 
-      - run: python update_dashboard.py
+      - name: Generate dashboard
+        run: python update_dashboard.py
 
-      - run: |
+      - name: Commit and push dashboard
+        run: |
           git config user.email "github-actions@github.com"
           git config user.name "github-actions"
           git add index.html
-          git commit -m "Update dashboard"
+          git commit -m "Update dashboard" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Souradeepghosh10/playwright-dashboard.git HEAD:${{ github.ref }}
