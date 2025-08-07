@@ -12,31 +12,27 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/4beacb84f11bdd9f4089824df13047b983943ac8",
-        "commitHash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-        "prHref": "https://github.com/Souradeepghosh10/Playwright-Project100/pull/17",
-        "prTitle": "commit",
-        "prBaseHash": "1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815285775"
+        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+        "commitHash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815290431"
       },
       "gitCommit": {
-        "shortHash": "4beacb8",
-        "hash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-        "subject": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-        "body": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c\n",
+        "shortHash": "6ca9943",
+        "hash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+        "subject": "Merge pull request #17 from Souradeepghosh10/gytytt",
+        "body": "Merge pull request #17 from Souradeepghosh10/gytytt\n\ncommit",
         "author": {
           "name": "Souradeepghosh10",
           "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-          "time": 1754599129000
+          "time": 1754599142000
         },
         "committer": {
           "name": "GitHub",
           "email": "noreply@github.com",
-          "time": 1754599129000
+          "time": 1754599142000
         },
-        "branch": "HEAD"
+        "branch": "Master"
       },
-      "gitDiff": "diff --git a/.github/workflows/playwright.yml b/.github/workflows/playwright.yml\nindex 83467ef..575990e 100644\n--- a/.github/workflows/playwright.yml\n+++ b/.github/workflows/playwright.yml\n@@ -29,26 +29,22 @@ jobs:\n       - name: 🌐 Install Playwright browsers\n         run: npx playwright install\n \n-      - name: 🎭 Run Playwright tests (Chromium only, no retries)\n-        run: npx playwright test --project=chromium --retries=0 --reporter=html,json || true\n+      - name: 🧪 Run Playwright Tests (continue on failure)\n+        run: |\n+          npx playwright test --project=chromium --retries=0 || true\n         continue-on-error: true\n \n-      - name: 📁 Upload Playwright HTML Report\n-        if: always()\n-        uses: actions/upload-artifact@v4\n-        with:\n-          name: playwright-html-report\n-          path: playwright-report\n-          retention-days: 5\n+      - name: 🧪 Debug - Show Report Folder\n+        run: |\n+          echo \"Today: $(date +'%Y-%m-%d')\"\n+          ls -la playwright-report || echo \"❌ playwright-report folder missing\"\n \n       - name: 🚀 Push Report to Dashboard Repo\n         if: always()\n         run: |\n           git clone https://x-access-token:${{ secrets.DASHBOARD_REPO_TOKEN }}@github.com/Souradeepghosh10/playwright-dashboard.git\n-\n-          # Use IST for report folder date\n-          REPORT_DATE=$(TZ='Asia/Kolkata' date +'%Y-%m-%d')\n-          echo \"📅 REPORT_DATE: $REPORT_DATE\"\n+          \n+          REPORT_DATE=$(date +'%Y-%m-%d')\n \n           if [ -d \"playwright-report\" ]; then\n             mkdir -p playwright-dashboard/Reports/$REPORT_DATE/html-report\n@@ -59,7 +55,7 @@ jobs:\n             git config user.email \"github-actions@github.com\"\n             git config user.name \"github-actions\"\n             git add .\n-            git commit -m \"📊 Add test report for $REPORT_DATE\"\n+            git commit -m \"📊 Add test report for $REPORT_DATE\" || echo \"No changes to commit\"\n             git push\n           else\n             echo \"⚠️ Skipping push: playwright-report not found.\"",
       "actualWorkers": 1
     },
     "preserveOutput": "always",
@@ -67,31 +63,27 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/4beacb84f11bdd9f4089824df13047b983943ac8",
-            "commitHash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-            "prHref": "https://github.com/Souradeepghosh10/Playwright-Project100/pull/17",
-            "prTitle": "commit",
-            "prBaseHash": "1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815285775"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "commitHash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815290431"
           },
           "gitCommit": {
-            "shortHash": "4beacb8",
-            "hash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-            "subject": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-            "body": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c\n",
+            "shortHash": "6ca9943",
+            "hash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "subject": "Merge pull request #17 from Souradeepghosh10/gytytt",
+            "body": "Merge pull request #17 from Souradeepghosh10/gytytt\n\ncommit",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754599129000
+              "time": 1754599142000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754599129000
+              "time": 1754599142000
             },
-            "branch": "HEAD"
+            "branch": "Master"
           },
-          "gitDiff": "diff --git a/.github/workflows/playwright.yml b/.github/workflows/playwright.yml\nindex 83467ef..575990e 100644\n--- a/.github/workflows/playwright.yml\n+++ b/.github/workflows/playwright.yml\n@@ -29,26 +29,22 @@ jobs:\n       - name: 🌐 Install Playwright browsers\n         run: npx playwright install\n \n-      - name: 🎭 Run Playwright tests (Chromium only, no retries)\n-        run: npx playwright test --project=chromium --retries=0 --reporter=html,json || true\n+      - name: 🧪 Run Playwright Tests (continue on failure)\n+        run: |\n+          npx playwright test --project=chromium --retries=0 || true\n         continue-on-error: true\n \n-      - name: 📁 Upload Playwright HTML Report\n-        if: always()\n-        uses: actions/upload-artifact@v4\n-        with:\n-          name: playwright-html-report\n-          path: playwright-report\n-          retention-days: 5\n+      - name: 🧪 Debug - Show Report Folder\n+        run: |\n+          echo \"Today: $(date +'%Y-%m-%d')\"\n+          ls -la playwright-report || echo \"❌ playwright-report folder missing\"\n \n       - name: 🚀 Push Report to Dashboard Repo\n         if: always()\n         run: |\n           git clone https://x-access-token:${{ secrets.DASHBOARD_REPO_TOKEN }}@github.com/Souradeepghosh10/playwright-dashboard.git\n-\n-          # Use IST for report folder date\n-          REPORT_DATE=$(TZ='Asia/Kolkata' date +'%Y-%m-%d')\n-          echo \"📅 REPORT_DATE: $REPORT_DATE\"\n+          \n+          REPORT_DATE=$(date +'%Y-%m-%d')\n \n           if [ -d \"playwright-report\" ]; then\n             mkdir -p playwright-dashboard/Reports/$REPORT_DATE/html-report\n@@ -59,7 +55,7 @@ jobs:\n             git config user.email \"github-actions@github.com\"\n             git config user.name \"github-actions\"\n             git add .\n-            git commit -m \"📊 Add test report for $REPORT_DATE\"\n+            git commit -m \"📊 Add test report for $REPORT_DATE\" || echo \"No changes to commit\"\n             git push\n           else\n             echo \"⚠️ Skipping push: playwright-report not found.\"",
           "actualWorkers": 1
         },
         "id": "chromium",
@@ -109,31 +101,27 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/4beacb84f11bdd9f4089824df13047b983943ac8",
-            "commitHash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-            "prHref": "https://github.com/Souradeepghosh10/Playwright-Project100/pull/17",
-            "prTitle": "commit",
-            "prBaseHash": "1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815285775"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "commitHash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815290431"
           },
           "gitCommit": {
-            "shortHash": "4beacb8",
-            "hash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-            "subject": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-            "body": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c\n",
+            "shortHash": "6ca9943",
+            "hash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "subject": "Merge pull request #17 from Souradeepghosh10/gytytt",
+            "body": "Merge pull request #17 from Souradeepghosh10/gytytt\n\ncommit",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754599129000
+              "time": 1754599142000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754599129000
+              "time": 1754599142000
             },
-            "branch": "HEAD"
+            "branch": "Master"
           },
-          "gitDiff": "diff --git a/.github/workflows/playwright.yml b/.github/workflows/playwright.yml\nindex 83467ef..575990e 100644\n--- a/.github/workflows/playwright.yml\n+++ b/.github/workflows/playwright.yml\n@@ -29,26 +29,22 @@ jobs:\n       - name: 🌐 Install Playwright browsers\n         run: npx playwright install\n \n-      - name: 🎭 Run Playwright tests (Chromium only, no retries)\n-        run: npx playwright test --project=chromium --retries=0 --reporter=html,json || true\n+      - name: 🧪 Run Playwright Tests (continue on failure)\n+        run: |\n+          npx playwright test --project=chromium --retries=0 || true\n         continue-on-error: true\n \n-      - name: 📁 Upload Playwright HTML Report\n-        if: always()\n-        uses: actions/upload-artifact@v4\n-        with:\n-          name: playwright-html-report\n-          path: playwright-report\n-          retention-days: 5\n+      - name: 🧪 Debug - Show Report Folder\n+        run: |\n+          echo \"Today: $(date +'%Y-%m-%d')\"\n+          ls -la playwright-report || echo \"❌ playwright-report folder missing\"\n \n       - name: 🚀 Push Report to Dashboard Repo\n         if: always()\n         run: |\n           git clone https://x-access-token:${{ secrets.DASHBOARD_REPO_TOKEN }}@github.com/Souradeepghosh10/playwright-dashboard.git\n-\n-          # Use IST for report folder date\n-          REPORT_DATE=$(TZ='Asia/Kolkata' date +'%Y-%m-%d')\n-          echo \"📅 REPORT_DATE: $REPORT_DATE\"\n+          \n+          REPORT_DATE=$(date +'%Y-%m-%d')\n \n           if [ -d \"playwright-report\" ]; then\n             mkdir -p playwright-dashboard/Reports/$REPORT_DATE/html-report\n@@ -59,7 +55,7 @@ jobs:\n             git config user.email \"github-actions@github.com\"\n             git config user.name \"github-actions\"\n             git add .\n-            git commit -m \"📊 Add test report for $REPORT_DATE\"\n+            git commit -m \"📊 Add test report for $REPORT_DATE\" || echo \"No changes to commit\"\n             git push\n           else\n             echo \"⚠️ Skipping push: playwright-report not found.\"",
           "actualWorkers": 1
         },
         "id": "firefox",
@@ -151,31 +139,27 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/4beacb84f11bdd9f4089824df13047b983943ac8",
-            "commitHash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-            "prHref": "https://github.com/Souradeepghosh10/Playwright-Project100/pull/17",
-            "prTitle": "commit",
-            "prBaseHash": "1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815285775"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "commitHash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815290431"
           },
           "gitCommit": {
-            "shortHash": "4beacb8",
-            "hash": "4beacb84f11bdd9f4089824df13047b983943ac8",
-            "subject": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c",
-            "body": "Merge 7b70439260753686b5b910638477d87847d6c8ea into 1bb562c8bd87592c303aa18e2fa3f2fc92a3f95c\n",
+            "shortHash": "6ca9943",
+            "hash": "6ca9943efa32b207c1548168bbe7c11b3f0fca16",
+            "subject": "Merge pull request #17 from Souradeepghosh10/gytytt",
+            "body": "Merge pull request #17 from Souradeepghosh10/gytytt\n\ncommit",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754599129000
+              "time": 1754599142000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754599129000
+              "time": 1754599142000
             },
-            "branch": "HEAD"
+            "branch": "Master"
           },
-          "gitDiff": "diff --git a/.github/workflows/playwright.yml b/.github/workflows/playwright.yml\nindex 83467ef..575990e 100644\n--- a/.github/workflows/playwright.yml\n+++ b/.github/workflows/playwright.yml\n@@ -29,26 +29,22 @@ jobs:\n       - name: 🌐 Install Playwright browsers\n         run: npx playwright install\n \n-      - name: 🎭 Run Playwright tests (Chromium only, no retries)\n-        run: npx playwright test --project=chromium --retries=0 --reporter=html,json || true\n+      - name: 🧪 Run Playwright Tests (continue on failure)\n+        run: |\n+          npx playwright test --project=chromium --retries=0 || true\n         continue-on-error: true\n \n-      - name: 📁 Upload Playwright HTML Report\n-        if: always()\n-        uses: actions/upload-artifact@v4\n-        with:\n-          name: playwright-html-report\n-          path: playwright-report\n-          retention-days: 5\n+      - name: 🧪 Debug - Show Report Folder\n+        run: |\n+          echo \"Today: $(date +'%Y-%m-%d')\"\n+          ls -la playwright-report || echo \"❌ playwright-report folder missing\"\n \n       - name: 🚀 Push Report to Dashboard Repo\n         if: always()\n         run: |\n           git clone https://x-access-token:${{ secrets.DASHBOARD_REPO_TOKEN }}@github.com/Souradeepghosh10/playwright-dashboard.git\n-\n-          # Use IST for report folder date\n-          REPORT_DATE=$(TZ='Asia/Kolkata' date +'%Y-%m-%d')\n-          echo \"📅 REPORT_DATE: $REPORT_DATE\"\n+          \n+          REPORT_DATE=$(date +'%Y-%m-%d')\n \n           if [ -d \"playwright-report\" ]; then\n             mkdir -p playwright-dashboard/Reports/$REPORT_DATE/html-report\n@@ -59,7 +55,7 @@ jobs:\n             git config user.email \"github-actions@github.com\"\n             git config user.name \"github-actions\"\n             git add .\n-            git commit -m \"📊 Add test report for $REPORT_DATE\"\n+            git commit -m \"📊 Add test report for $REPORT_DATE\" || echo \"No changes to commit\"\n             git push\n           else\n             echo \"⚠️ Skipping push: playwright-report not found.\"",
           "actualWorkers": 1
         },
         "id": "webkit",
@@ -218,12 +202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 358,
+                  "duration": 413,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:39:23.137Z",
+                  "startTime": "2025-08-07T20:39:28.459Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -252,12 +236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 525,
+                  "duration": 355,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:39:23.646Z",
+                  "startTime": "2025-08-07T20:39:29.018Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -286,12 +270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 572,
+                  "duration": 587,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:39:24.176Z",
+                  "startTime": "2025-08-07T20:39:29.379Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -328,12 +312,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1032,
+                  "duration": 572,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:39:24.754Z",
+                  "startTime": "2025-08-07T20:39:29.972Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -370,12 +354,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 405,
+                  "duration": 336,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:39:25.791Z",
+                  "startTime": "2025-08-07T20:39:30.549Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -412,7 +396,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 6062,
+                  "duration": 5910,
                   "error": {
                     "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n",
                     "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22",
@@ -436,7 +420,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:39:26.201Z",
+                  "startTime": "2025-08-07T20:39:30.890Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -491,12 +475,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1438,
+                      "duration": 1315,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:32.888Z",
+                      "startTime": "2025-08-07T20:39:37.359Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -525,12 +509,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1878,
+                      "duration": 1559,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:34.429Z",
+                      "startTime": "2025-08-07T20:39:38.773Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -559,12 +543,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1124,
+                      "duration": 1037,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:36.313Z",
+                      "startTime": "2025-08-07T20:39:40.337Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -593,12 +577,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1187,
+                      "duration": 1040,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:37.442Z",
+                      "startTime": "2025-08-07T20:39:41.380Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -627,12 +611,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1150,
+                      "duration": 1050,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:38.634Z",
+                      "startTime": "2025-08-07T20:39:42.425Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -661,12 +645,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1312,
+                      "duration": 1194,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:39.788Z",
+                      "startTime": "2025-08-07T20:39:43.480Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -712,12 +696,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 655,
+                      "duration": 598,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:41.107Z",
+                      "startTime": "2025-08-07T20:39:44.681Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -746,12 +730,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 633,
+                      "duration": 637,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:41.768Z",
+                      "startTime": "2025-08-07T20:39:45.284Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -780,12 +764,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 632,
+                      "duration": 608,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:39:42.405Z",
+                      "startTime": "2025-08-07T20:39:45.925Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -805,8 +789,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T20:39:22.067Z",
-    "duration": 21019.323,
+    "startTime": "2025-08-07T20:39:27.782Z",
+    "duration": 18801.941000000003,
     "expected": 14,
     "skipped": 0,
     "unexpected": 1,
