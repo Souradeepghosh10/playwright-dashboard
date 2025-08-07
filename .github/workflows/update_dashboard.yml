@@ -1,0 +1,24 @@
+
+name: Update Dashboard
+on:
+  push:
+    paths:
+      - 'Reports/**'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - run: pip install jinja2
+      - run: python update_dashboard.py
+      - run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git add index.html
+          git commit -m "Update dashboard"
+          git push
