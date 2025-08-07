@@ -1,25 +1,48 @@
-
-
 import os
 import json
-from datetime import datetime, timedelta
+from datetime import datetime
 from jinja2 import Template
-reports_dir = "Reports"
-today = datetime.now().date()
-days = [(today - timedelta(days=i)).isoformat() for i in range(30)]
-data = []
-for day in days:
-    path = os.path.join(reports_dir, day, "report.json")
-    if os.path.exists(path):
-        with open(path) as f:
-            report = json.load(f)
-            passed = len([t for t in report['suites'][0]['specs'] if t['ok']])
-            failed = len([t for t in report['suites'][0]['specs'] if not t['ok']])
-            data.append({'date': day, 'passed': passed, 'failed': failed})
-# Top unstable logic here later
-unstable_tests = [{"name": "Test A", "failures": 5}, {"name": "Test B", "failures": 4}]
-with open("index.html") as f:
-    template = Template(f.read())
-rendered = template.render(trends=data, unstable=unstable_tests, report_days=days)
+
+data_folder = "data"
+report_data = {}
+
+# Scan all folders inside `data/` (e.g., '2025-08-07', '2025-08-08', etc.)
+for date_dir in sorted(os.listdir(data_folder)):
+    full_path = os.path.join(data_folder, date_dir, "report.json")
+    if os.path.exists(full_path):
+        with open(full_path, "r") as f:
+            data = json.load(f)
+        passed = sum(1 for test in data["suites"][0]["specs"] if test["status"] == "passed")
+        failed = sum(1 for test in data["suites"][0]["specs"] if test["status"] == "failed")
+        report_data[date_dir] = {"passed": passed, "failed": failed}
+
+# Template rendering
+template_html = """
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Playwright Test Dashboard</title>
+</head>
+<body>
+    <h1>📊 Playwright Test Dashboard</h1>
+    <h2>📅 Daily Reports</h2>
+    <ul>
+    {% for date, stats in report_data.items() %}
+        <li>
+            <a href="data/{{ date }}/index.html">{{ date }}</a>
+            ✅ {{ stats.passed }} ❌ {{ stats.failed }}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
+"""
+
+template = Template(template_html)
+rendered = template.render(report_data=report_data)
+
 with open("index.html", "w") as f:
     f.write(rendered)
+
+print("✅ Dashboard generated with updated report links.")
