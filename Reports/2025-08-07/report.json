@@ -12,24 +12,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/0eee65b3b0031e3cf38661a01e958bd31415c003",
-        "commitHash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810145206"
+        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+        "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
       },
       "gitCommit": {
-        "shortHash": "0eee65b",
-        "hash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-        "subject": "Update gmail.spec.ts",
-        "body": "Update gmail.spec.ts",
+        "shortHash": "c743e9a",
+        "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+        "subject": "Update facebook.spec.ts",
+        "body": "Update facebook.spec.ts",
         "author": {
           "name": "Souradeepghosh10",
           "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-          "time": 1754583967000
+          "time": 1754583984000
         },
         "committer": {
           "name": "GitHub",
           "email": "noreply@github.com",
-          "time": 1754583967000
+          "time": 1754583984000
         },
         "branch": "Master"
       },
@@ -63,24 +63,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "commitHash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810145206"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
           },
           "gitCommit": {
-            "shortHash": "0eee65b",
-            "hash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "subject": "Update gmail.spec.ts",
-            "body": "Update gmail.spec.ts",
+            "shortHash": "c743e9a",
+            "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "subject": "Update facebook.spec.ts",
+            "body": "Update facebook.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754583967000
+              "time": 1754583984000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754583967000
+              "time": 1754583984000
             },
             "branch": "Master"
           },
@@ -101,24 +101,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "commitHash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810145206"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
           },
           "gitCommit": {
-            "shortHash": "0eee65b",
-            "hash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "subject": "Update gmail.spec.ts",
-            "body": "Update gmail.spec.ts",
+            "shortHash": "c743e9a",
+            "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "subject": "Update facebook.spec.ts",
+            "body": "Update facebook.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754583967000
+              "time": 1754583984000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754583967000
+              "time": 1754583984000
             },
             "branch": "Master"
           },
@@ -139,24 +139,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "commitHash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810145206"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
           },
           "gitCommit": {
-            "shortHash": "0eee65b",
-            "hash": "0eee65b3b0031e3cf38661a01e958bd31415c003",
-            "subject": "Update gmail.spec.ts",
-            "body": "Update gmail.spec.ts",
+            "shortHash": "c743e9a",
+            "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
+            "subject": "Update facebook.spec.ts",
+            "body": "Update facebook.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754583967000
+              "time": 1754583984000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754583967000
+              "time": 1754583984000
             },
             "branch": "Master"
           },
@@ -202,12 +202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 318,
+                  "duration": 305,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:26:55.389Z",
+                  "startTime": "2025-08-07T16:37:43.221Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -236,12 +236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 369,
+                  "duration": 359,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:26:55.783Z",
+                  "startTime": "2025-08-07T16:37:43.597Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -270,12 +270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 510,
+                  "duration": 392,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:26:56.159Z",
+                  "startTime": "2025-08-07T16:37:43.961Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -298,7 +298,7 @@
       "specs": [
         {
           "title": "End-to-end: Verify Facebook login page loads",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -311,48 +311,18 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 6120,
-                  "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Facebook1/\u001b[39m\nReceived string:  \u001b[31m\"Facebook - log in or sign up\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html class=\"\" lang=\"en\" id=\"facebook\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Facebook - log in or sign up\"\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Facebook1/\u001b[39m\nReceived string:  \u001b[31m\"Facebook - log in or sign up\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html class=\"\" lang=\"en\" id=\"facebook\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Facebook - log in or sign up\"\u001b[22m\n\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/facebook.spec.ts:8:22",
-                    "location": {
-                      "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/facebook.spec.ts",
-                      "column": 22,
-                      "line": 8
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[90m// Step 2: Verify Facebook login page is displayed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Facebook1/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[name=\"email\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[name=\"pass\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/Log In/i\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/facebook.spec.ts",
-                        "column": 22,
-                        "line": 8
-                      },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Facebook1/\u001b[39m\nReceived string:  \u001b[31m\"Facebook - log in or sign up\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html class=\"\" lang=\"en\" id=\"facebook\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Facebook - log in or sign up\"\u001b[22m\n\n\n   6 |\n   7 |   // Step 2: Verify Facebook login page is displayed\n>  8 |   await expect(page).toHaveTitle(/Facebook1/);\n     |                      ^\n   9 |   await expect(page.locator('input[name=\"email\"]')).toBeVisible();\n  10 |   await expect(page.locator('input[name=\"pass\"]')).toBeVisible();\n  11 |   await expect(page.getByRole('button', { name: /Log In/i })).toBeVisible();\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/facebook.spec.ts:8:22"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 1413,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:26:56.675Z",
+                  "startTime": "2025-08-07T16:37:44.360Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results/facebook-End-to-end-Verify-Facebook-login-page-loads-chromium/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/facebook.spec.ts",
-                    "column": 22,
-                    "line": 8
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "cdcd5b3cb6dd168b3b92-f2e57dac7e113ca41c7d",
@@ -381,15 +351,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 406,
+                  "duration": 341,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:27:03.343Z",
+                  "startTime": "2025-08-07T16:37:45.778Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -423,15 +393,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 929,
+                  "duration": 763,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:27:03.819Z",
+                  "startTime": "2025-08-07T16:37:46.123Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -472,15 +442,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1565,
+                      "duration": 1918,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:04.760Z",
+                      "startTime": "2025-08-07T16:37:46.893Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -506,15 +476,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1437,
+                      "duration": 1805,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:06.330Z",
+                      "startTime": "2025-08-07T16:37:48.816Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -540,15 +510,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 989,
+                      "duration": 1239,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:07.772Z",
+                      "startTime": "2025-08-07T16:37:50.626Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -574,15 +544,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1038,
+                      "duration": 1322,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:08.766Z",
+                      "startTime": "2025-08-07T16:37:51.871Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -608,15 +578,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1038,
+                      "duration": 1233,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:09.808Z",
+                      "startTime": "2025-08-07T16:37:53.198Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -642,15 +612,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1046,
+                      "duration": 1349,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:10.851Z",
+                      "startTime": "2025-08-07T16:37:54.437Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -693,15 +663,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 533,
+                      "duration": 755,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:11.911Z",
+                      "startTime": "2025-08-07T16:37:55.791Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -727,15 +697,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 563,
+                      "duration": 777,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:12.450Z",
+                      "startTime": "2025-08-07T16:37:56.550Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -761,15 +731,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 524,
+                      "duration": 727,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:27:13.018Z",
+                      "startTime": "2025-08-07T16:37:57.331Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -789,11 +759,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T16:26:54.706Z",
-    "duration": 18881.486,
-    "expected": 14,
+    "startTime": "2025-08-07T16:37:42.557Z",
+    "duration": 15546.418,
+    "expected": 15,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
