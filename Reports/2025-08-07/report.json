@@ -12,24 +12,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/a1b7ca6e330244432ae953da8afb689ee6e2d707",
-        "commitHash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810826854"
+        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
+        "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
       },
       "gitCommit": {
-        "shortHash": "a1b7ca6",
-        "hash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-        "subject": "Update gmail.spec.ts",
-        "body": "Update gmail.spec.ts",
+        "shortHash": "25dfef4",
+        "hash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+        "subject": "Update practice-test-contact.spec.ts",
+        "body": "Update practice-test-contact.spec.ts",
         "author": {
           "name": "Souradeepghosh10",
           "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-          "time": 1754585917000
+          "time": 1754591451000
         },
         "committer": {
           "name": "GitHub",
           "email": "noreply@github.com",
-          "time": 1754585917000
+          "time": 1754591451000
         },
         "branch": "Master"
       },
@@ -63,24 +63,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "commitHash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810826854"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
+            "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
           },
           "gitCommit": {
-            "shortHash": "a1b7ca6",
-            "hash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "subject": "Update gmail.spec.ts",
-            "body": "Update gmail.spec.ts",
+            "shortHash": "25dfef4",
+            "hash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+            "subject": "Update practice-test-contact.spec.ts",
+            "body": "Update practice-test-contact.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754585917000
+              "time": 1754591451000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754585917000
+              "time": 1754591451000
             },
             "branch": "Master"
           },
@@ -101,24 +101,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "commitHash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810826854"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
+            "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
           },
           "gitCommit": {
-            "shortHash": "a1b7ca6",
-            "hash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "subject": "Update gmail.spec.ts",
-            "body": "Update gmail.spec.ts",
+            "shortHash": "25dfef4",
+            "hash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+            "subject": "Update practice-test-contact.spec.ts",
+            "body": "Update practice-test-contact.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754585917000
+              "time": 1754591451000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754585917000
+              "time": 1754591451000
             },
             "branch": "Master"
           },
@@ -139,24 +139,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "commitHash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810826854"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/25dfef496236490bbbb98a25e2c20b314d51d465",
+            "commitHash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16812743844"
           },
           "gitCommit": {
-            "shortHash": "a1b7ca6",
-            "hash": "a1b7ca6e330244432ae953da8afb689ee6e2d707",
-            "subject": "Update gmail.spec.ts",
-            "body": "Update gmail.spec.ts",
+            "shortHash": "25dfef4",
+            "hash": "25dfef496236490bbbb98a25e2c20b314d51d465",
+            "subject": "Update practice-test-contact.spec.ts",
+            "body": "Update practice-test-contact.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754585917000
+              "time": 1754591451000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754585917000
+              "time": 1754591451000
             },
             "branch": "Master"
           },
@@ -202,12 +202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 422,
+                  "duration": 379,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:59:23.324Z",
+                  "startTime": "2025-08-07T18:31:30.034Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -236,12 +236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 375,
+                  "duration": 402,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:59:23.822Z",
+                  "startTime": "2025-08-07T18:31:30.516Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -270,12 +270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 629,
+                  "duration": 538,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:59:24.203Z",
+                  "startTime": "2025-08-07T18:31:30.924Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -312,12 +312,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 735,
+                  "duration": 1536,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:59:24.840Z",
+                  "startTime": "2025-08-07T18:31:31.468Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -354,12 +354,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 395,
+                  "duration": 376,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:59:25.580Z",
+                  "startTime": "2025-08-07T18:31:33.009Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -396,7 +396,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 5782,
+                  "duration": 5693,
                   "error": {
                     "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n",
                     "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    8 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22",
@@ -420,7 +420,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:59:25.981Z",
+                  "startTime": "2025-08-07T18:31:33.390Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -475,12 +475,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1685,
+                      "duration": 2049,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:59:32.355Z",
+                      "startTime": "2025-08-07T18:31:39.616Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -509,12 +509,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1611,
+                      "duration": 1952,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:59:34.115Z",
+                      "startTime": "2025-08-07T18:31:41.734Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -543,12 +543,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1485,
+                      "duration": 1304,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:59:35.731Z",
+                      "startTime": "2025-08-07T18:31:43.692Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -577,12 +577,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1252,
+                      "duration": 1433,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:59:37.221Z",
+                      "startTime": "2025-08-07T18:31:45.001Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -611,12 +611,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1088,
+                      "duration": 1355,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:59:38.478Z",
+                      "startTime": "2025-08-07T18:31:46.439Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -631,7 +631,7 @@
             },
             {
               "title": "Validate navigation to Contacts tab",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -644,40 +644,18 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30024,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/practice-test-contact.spec.ts",
-                            "column": 16,
-                            "line": 71
-                          },
-                          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Contact1')\u001b[22m\n\n\n  69 |   test('Validate navigation to Contacts tab', async ({ page }) => {\n  70 |     await page.goto('https://practicetestautomation.com/');\n> 71 |     await page.click('text=Contact1');\n     |                ^\n  72 |     await expect(page).toHaveURL(CONTACT_URL);\n  73 |     await expect(page.locator('h1')).toHaveText(/Contact/);\n  74 |   });\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/practice-test-contact.spec.ts:71:16"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 1450,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:59:39.571Z",
+                      "startTime": "2025-08-07T18:31:47.801Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results/practice-test-contact-Prac-f193c--navigation-to-Contacts-tab-chromium/error-context.md"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "4aa1cb1d86768f75b8eb-3c66a9a78f2dc9cd6c08",
@@ -715,15 +693,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 659,
+                      "duration": 807,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T17:00:10.164Z",
+                      "startTime": "2025-08-07T18:31:49.258Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -749,15 +727,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 681,
+                      "duration": 850,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T17:00:10.892Z",
+                      "startTime": "2025-08-07T18:31:50.077Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -783,15 +761,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 593,
+                      "duration": 830,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T17:00:11.579Z",
+                      "startTime": "2025-08-07T18:31:50.932Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -811,11 +789,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T16:59:22.606Z",
-    "duration": 49613.286,
-    "expected": 13,
+    "startTime": "2025-08-07T18:31:29.369Z",
+    "duration": 22438.175,
+    "expected": 14,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 1,
     "flaky": 0
   }
 }
