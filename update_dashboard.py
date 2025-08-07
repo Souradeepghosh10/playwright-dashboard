@@ -21,7 +21,7 @@ for day in days:
 # Top unstable logic here later
 unstable_tests = [{"name": "Test A", "failures": 5}, {"name": "Test B", "failures": 4}]
 
-with open("templates/index.html") as f:
+with open("index.html") as f:
     template = Template(f.read())
 
 rendered = template.render(trends=data, unstable=unstable_tests, report_days=days)
