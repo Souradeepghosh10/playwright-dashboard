@@ -12,24 +12,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-        "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
+        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+        "commitHash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810555906"
       },
       "gitCommit": {
-        "shortHash": "c743e9a",
-        "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-        "subject": "Update facebook.spec.ts",
-        "body": "Update facebook.spec.ts",
+        "shortHash": "3b5dd9f",
+        "hash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+        "subject": "Update practice-test-contact.spec.ts",
+        "body": "Update practice-test-contact.spec.ts",
         "author": {
           "name": "Souradeepghosh10",
           "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-          "time": 1754583984000
+          "time": 1754585145000
         },
         "committer": {
           "name": "GitHub",
           "email": "noreply@github.com",
-          "time": 1754583984000
+          "time": 1754585145000
         },
         "branch": "Master"
       },
@@ -63,24 +63,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "commitHash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810555906"
           },
           "gitCommit": {
-            "shortHash": "c743e9a",
-            "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "subject": "Update facebook.spec.ts",
-            "body": "Update facebook.spec.ts",
+            "shortHash": "3b5dd9f",
+            "hash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "subject": "Update practice-test-contact.spec.ts",
+            "body": "Update practice-test-contact.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754583984000
+              "time": 1754585145000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754583984000
+              "time": 1754585145000
             },
             "branch": "Master"
           },
@@ -101,24 +101,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "commitHash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810555906"
           },
           "gitCommit": {
-            "shortHash": "c743e9a",
-            "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "subject": "Update facebook.spec.ts",
-            "body": "Update facebook.spec.ts",
+            "shortHash": "3b5dd9f",
+            "hash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "subject": "Update practice-test-contact.spec.ts",
+            "body": "Update practice-test-contact.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754583984000
+              "time": 1754585145000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754583984000
+              "time": 1754585145000
             },
             "branch": "Master"
           },
@@ -139,24 +139,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "commitHash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810150911"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "commitHash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16810555906"
           },
           "gitCommit": {
-            "shortHash": "c743e9a",
-            "hash": "c743e9a606f7de254a2c873bcbd2cf1edbd899a8",
-            "subject": "Update facebook.spec.ts",
-            "body": "Update facebook.spec.ts",
+            "shortHash": "3b5dd9f",
+            "hash": "3b5dd9f3a0d59ec1f78390a03812527619de9a87",
+            "subject": "Update practice-test-contact.spec.ts",
+            "body": "Update practice-test-contact.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754583984000
+              "time": 1754585145000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754583984000
+              "time": 1754585145000
             },
             "branch": "Master"
           },
@@ -202,12 +202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 305,
+                  "duration": 391,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:37:43.221Z",
+                  "startTime": "2025-08-07T16:46:34.746Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -236,12 +236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 359,
+                  "duration": 420,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:37:43.597Z",
+                  "startTime": "2025-08-07T16:46:35.231Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -270,12 +270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 392,
+                  "duration": 433,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:37:43.961Z",
+                  "startTime": "2025-08-07T16:46:35.657Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -312,12 +312,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1413,
+                  "duration": 836,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:37:44.360Z",
+                  "startTime": "2025-08-07T16:46:36.097Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -354,12 +354,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 341,
+                  "duration": 385,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:37:45.778Z",
+                  "startTime": "2025-08-07T16:46:36.938Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -396,12 +396,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 763,
+                  "duration": 850,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T16:37:46.123Z",
+                  "startTime": "2025-08-07T16:46:37.329Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -445,12 +445,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1918,
+                      "duration": 1835,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:46.893Z",
+                      "startTime": "2025-08-07T16:46:38.186Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -479,12 +479,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1805,
+                      "duration": 1621,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:48.816Z",
+                      "startTime": "2025-08-07T16:46:40.025Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -513,12 +513,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1239,
+                      "duration": 1888,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:50.626Z",
+                      "startTime": "2025-08-07T16:46:41.651Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -547,12 +547,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1322,
+                      "duration": 3052,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:51.871Z",
+                      "startTime": "2025-08-07T16:46:43.544Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -581,12 +581,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1233,
+                      "duration": 1659,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:53.198Z",
+                      "startTime": "2025-08-07T16:46:46.602Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -601,7 +601,7 @@
             },
             {
               "title": "Validate navigation to Contacts tab",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -614,18 +614,40 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1349,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 30022,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/practice-test-contact.spec.ts",
+                            "column": 16,
+                            "line": 71
+                          },
+                          "message": "Error: page.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('text=Contact1')\u001b[22m\n\n\n  69 |   test('Validate navigation to Contacts tab', async ({ page }) => {\n  70 |     await page.goto('https://practicetestautomation.com/');\n> 71 |     await page.click('text=Contact1');\n     |                ^\n  72 |     await expect(page).toHaveURL(CONTACT_URL);\n  73 |     await expect(page.locator('h1')).toHaveText(/Contact/);\n  74 |   });\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/practice-test-contact.spec.ts:71:16"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:54.437Z",
+                      "startTime": "2025-08-07T16:46:48.266Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results/practice-test-contact-Prac-f193c--navigation-to-Contacts-tab-chromium/error-context.md"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "4aa1cb1d86768f75b8eb-3c66a9a78f2dc9cd6c08",
@@ -663,15 +685,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 755,
+                      "duration": 918,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:55.791Z",
+                      "startTime": "2025-08-07T16:47:18.841Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -697,15 +719,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 777,
+                      "duration": 811,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:56.550Z",
+                      "startTime": "2025-08-07T16:47:19.825Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -731,15 +753,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 727,
+                      "duration": 765,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T16:37:57.331Z",
+                      "startTime": "2025-08-07T16:47:20.642Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -759,11 +781,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T16:37:42.557Z",
-    "duration": 15546.418,
-    "expected": 15,
+    "startTime": "2025-08-07T16:46:34.049Z",
+    "duration": 47402.351,
+    "expected": 14,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

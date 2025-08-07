@@ -1,0 +1,102 @@
+# Page snapshot
+
+```yaml
+- link "Press \"Enter\" to skip to content":
+  - /url: "#main-container"
+- banner:
+  - navigation
+  - link "Practice Test Automation":
+    - /url: https://practicetestautomation.com/
+    - img "Practice Test Automation"
+  - navigation:
+    - navigation:
+      - list:
+        - listitem:
+          - link "Home":
+            - /url: https://practicetestautomation.com/
+        - listitem:
+          - link "Practice":
+            - /url: https://practicetestautomation.com/practice/
+        - listitem:
+          - link "Courses":
+            - /url: https://practicetestautomation.com/courses/
+        - listitem:
+          - link "Blog":
+            - /url: https://practicetestautomation.com/blog/
+        - listitem:
+          - link "Contact":
+            - /url: https://practicetestautomation.com/contact/
+- main:
+  - article:
+    - heading "Hello" [level=1]
+    - figure:
+      - img "Dmitry Shyshkin, your Selenium WebDriver instructor"
+    - paragraph:
+      - strong: Welcome to Practice Test Automation!
+    - paragraph: I’m Dmitry Shyshkin, your guide on the path to a thriving QA career. Effortlessly master Selenium WebDriver and test automation to enhance your skills and increase your earnings.
+    - paragraph:
+      - strong: Experience and Expertise
+    - paragraph: As a Principal Software Development Engineer in Test, I bring over a decade of experience in automating Web UI, API, and Mobile tests using tools like Selenium WebDriver, Appium, Postman, RestAssured, and more. I began my journey as a manual QA engineer and quickly developed a passion for test automation. Having served as the lead test automation expert in various projects, I’m confident in my ability to help you excel in test automation.
+    - paragraph:
+      - strong: Beyond Test Automation
+    - paragraph: Not only have I automated tests, but I’ve also applied automation to job searches and even finding cheaper flights! Now, I’m eager to share this passion and knowledge with you.
+    - paragraph:
+      - strong: Courses and Achievements
+    - paragraph:
+      - text: In 2017, I started sharing my test automation expertise through video courses, beginning with a Selenium WebDriver tutorial on YouTube. Today, I offer
+      - strong:
+        - link "nine courses with over 70,000 students":
+          - /url: https://practicetestautomation.com/courses/
+      - text: ", including a"
+      - strong:
+        - link "BestSeller XPath course":
+          - /url: https://www.udemy.com/course/xpath-locators-for-selenium/?referralCode=ACB28329B5AC2333DDCC
+      - text: and a
+      - strong:
+        - link "HighestRated Selenium course":
+          - /url: https://www.udemy.com/course/selenium-for-beginners/?referralCode=A21BE51035C15406EFA4
+      - text: . With a 4.7 out of 5 instructor rating, I’m grateful to every student who has joined me on this journey.
+    - paragraph:
+      - strong: A Resourceful Website
+    - paragraph:
+      - text: This website was carefully crafted to host a
+      - strong:
+        - link "diverse selection of articles, standalone lectures, tips, and examples":
+          - /url: https://practicetestautomation.com/blog/
+      - text: for those interested in test automation. Moreover, with a
+      - strong:
+        - link "practical platform":
+          - /url: https://practicetestautomation.com/practice/
+      - text: already established, test automation beginners can easily put their skills into practice.
+    - paragraph:
+      - strong: Looking Ahead
+    - paragraph: As we look ahead, I’m thrilled about the future of Practice Test Automation and delighted to have you on board!
+    - paragraph:
+      - strong: Explore and Learn
+    - paragraph:
+      - text: Please be sure to visit our
+      - strong:
+        - link "BLOG":
+          - /url: https://practicetestautomation.com/blog/
+      - text: for engaging articles, speeches, and tutorials, and don’t miss our
+      - link "COURSES":
+        - /url: https://practicetestautomation.com/courses/
+        - strong: COURSES
+      - text: ", designed to enrich your learning experience."
+    - heading "Get a FREE XPath cheat sheet by Signing Up for our newsletter" [level=6]
+    - textbox "Name *"
+    - textbox "Email Address *"
+    - button "Get XPath cheat sheet"
+    - paragraph:
+      - emphasis:
+        - text: We don’t spam! Read more in our
+        - link "privacy policy":
+          - /url: https://practicetestautomation.com/privacy-policy/
+- contentinfo:
+  - text: © Copyright 2020
+  - link "Practice Test Automation.":
+    - /url: https://practicetestautomation.com/
+  - text: All rights reserved |
+  - link "Privacy Policy":
+    - /url: https://practicetestautomation.com/privacy-policy/
+```
