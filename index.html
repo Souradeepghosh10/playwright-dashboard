@@ -1,24 +1,107 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Playwright Dashboard</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+  <meta charset="UTF-8" />
+  <title>Playwright Test Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    h1 { margin-top: 0; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { padding: 8px 12px; border: 1px solid #ccc; }
+    th { background-color: #f4f4f4; }
+    .fail { color: red; }
+    .pass { color: green; }
+  </style>
 </head>
 <body>
-  <h1>Playwright Dashboard - 30 Days</h1>
-  <div id="trend-chart-container">
-    <canvas id="trendChart"></canvas>
-  </div>
-  <div id="unstable-tests">
-    <h2>Top 10 Unstable Tests</h2>
-    <ul id="unstableList"></ul>
-  </div>
-  <div id="report-links">
-    <h2>Daily Reports</h2>
-    <ul id="reportLinks"></ul>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="static/charts.js"></script>
+  <h1>📊 Playwright Test Dashboard</h1>
+  <canvas id="trendChart" width="800" height="300"></canvas>
+  <h2>📅 Daily Reports</h2>
+  <div id="reportLinks"></div>
+  <h2>⚠️ Unstable Test Cases (last 30 days)</h2>
+  <div id="unstableTests"></div>
+
+  <script>
+    async function fetchReport(date) {
+      const url = `Reports/${date}/report.json`;
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        return await res.json();
+      } catch {
+        return null;
+      }
+    }
+
+    async function loadDashboard() {
+      const today = new Date();
+      const reports = [];
+      const failures = {};
+
+      for (let i = 29; i >= 0; i--) {
+        const date = new Date(today);
+        date.setDate(today.getDate() - i);
+        const formatted = date.toISOString().split('T')[0];
+        const json = await fetchReport(formatted);
+        if (json) {
+          const failed = json.stats.unexpected || 0;
+          const passed = json.stats.expected || 0;
+          reports.push({ date: formatted, passed, failed });
+
+          json.suites?.forEach(suite => {
+            suite.tests?.forEach(test => {
+              if (test.status === 'failed') {
+                const key = test.title.join(' > ');
+                failures[key] = (failures[key] || 0) + 1;
+              }
+            });
+          });
+        }
+      }
+
+      // Chart
+      const ctx = document.getElementById('trendChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: reports.map(r => r.date),
+          datasets: [
+            {
+              label: 'Passed',
+              data: reports.map(r => r.passed),
+              borderColor: 'green',
+              fill: false
+            },
+            {
+              label: 'Failed',
+              data: reports.map(r => r.failed),
+              borderColor: 'red',
+              fill: false
+            }
+          ]
+        },
+        options: { responsive: true }
+      });
+
+      // Links
+      const reportLinks = reports.map(r => {
+        return `<li><a href="Reports/${r.date}/html-report/index.html" target="_blank">${r.date}</a> ✅ ${r.passed} ❌ ${r.failed}</li>`;
+      }).join('');
+      document.getElementById('reportLinks').innerHTML = `<ul>${reportLinks}</ul>`;
+
+      // Unstable tests
+      const sorted = Object.entries(failures).sort((a, b) => b[1] - a[1]);
+      const unstableHTML = sorted.length === 0
+        ? `<p>No unstable tests found!</p>`
+        : `<table><thead><tr><th>Test Case</th><th>Failure Count</th></tr></thead><tbody>` +
+          sorted.map(([name, count]) => `<tr><td>${name}</td><td>${count}</td></tr>`).join('') +
+          `</tbody></table>`;
+      document.getElementById('unstableTests').innerHTML = unstableHTML;
+    }
+
+    loadDashboard();
+  </script>
 </body>
 </html>
