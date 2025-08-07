@@ -1,36 +1,25 @@
-name: Update Dashboard
 
-on:
-  push:
-    paths:
-      - 'Reports/**'
 
-permissions:
-  contents: read  # read access still required to checkout
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-
-      - name: Install dependencies
-        run: pip install jinja2
-
-      - name: Generate dashboard
-        run: python update_dashboard.py
-
-      - name: Commit and push dashboard
-        run: |
-          git config user.email "github-actions@github.com"
-          git config user.name "github-actions"
-          git add index.html
-          git commit -m "Update dashboard"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Souradeepghosh10/playwright-dashboard.git HEAD:${{ github.ref }}
+import os
+import json
+from datetime import datetime, timedelta
+from jinja2 import Template
+reports_dir = "Reports"
+today = datetime.now().date()
+days = [(today - timedelta(days=i)).isoformat() for i in range(30)]
+data = []
+for day in days:
+    path = os.path.join(reports_dir, day, "report.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            report = json.load(f)
+            passed = len([t for t in report['suites'][0]['specs'] if t['ok']])
+            failed = len([t for t in report['suites'][0]['specs'] if not t['ok']])
+            data.append({'date': day, 'passed': passed, 'failed': failed})
+# Top unstable logic here later
+unstable_tests = [{"name": "Test A", "failures": 5}, {"name": "Test B", "failures": 4}]
+with open("index.html") as f:
+    template = Template(f.read())
+rendered = template.render(trends=data, unstable=unstable_tests, report_days=days)
+with open("index.html", "w") as f:
+    f.write(rendered)
