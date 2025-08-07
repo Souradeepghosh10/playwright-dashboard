@@ -1,29 +1,36 @@
+name: Update Dashboard
 
-import os
-import json
-from datetime import datetime, timedelta
-from jinja2 import Template
+on:
+  push:
+    paths:
+      - 'Reports/**'
 
-reports_dir = "Reports"
-today = datetime.now().date()
-days = [(today - timedelta(days=i)).isoformat() for i in range(30)]
-data = []
+permissions:
+  contents: read  # read access still required to checkout
 
-for day in days:
-    path = os.path.join(reports_dir, day, "report.json")
-    if os.path.exists(path):
-        with open(path) as f:
-            report = json.load(f)
-            passed = len([t for t in report['suites'][0]['specs'] if t['ok']])
-            failed = len([t for t in report['suites'][0]['specs'] if not t['ok']])
-            data.append({'date': day, 'passed': passed, 'failed': failed})
+jobs:
+  update:
+    runs-on: ubuntu-latest
 
-# Top unstable logic here later
-unstable_tests = [{"name": "Test A", "failures": 5}, {"name": "Test B", "failures": 4}]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-with open("index.html") as f:
-    template = Template(f.read())
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
 
-rendered = template.render(trends=data, unstable=unstable_tests, report_days=days)
-with open("index.html", "w") as f:
-    f.write(rendered)
+      - name: Install dependencies
+        run: pip install jinja2
+
+      - name: Generate dashboard
+        run: python update_dashboard.py
+
+      - name: Commit and push dashboard
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git add index.html
+          git commit -m "Update dashboard"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Souradeepghosh10/playwright-dashboard.git HEAD:${{ github.ref }}
