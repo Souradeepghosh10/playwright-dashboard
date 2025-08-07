@@ -1,0 +1,799 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/Playwright-Project100/Playwright-Project100/playwright.config.ts",
+    "rootDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+        "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+      },
+      "gitCommit": {
+        "shortHash": "c9ee8e0",
+        "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+        "subject": "Update playwright.yml",
+        "body": "Update playwright.yml",
+        "author": {
+          "name": "Souradeepghosh10",
+          "email": "44546427+Souradeepghosh10@users.noreply.github.com",
+          "time": 1754599510000
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "time": 1754599510000
+        },
+        "branch": "Master"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+          },
+          "gitCommit": {
+            "shortHash": "c9ee8e0",
+            "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "subject": "Update playwright.yml",
+            "body": "Update playwright.yml",
+            "author": {
+              "name": "Souradeepghosh10",
+              "email": "44546427+Souradeepghosh10@users.noreply.github.com",
+              "time": 1754599510000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1754599510000
+            },
+            "branch": "Master"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+          },
+          "gitCommit": {
+            "shortHash": "c9ee8e0",
+            "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "subject": "Update playwright.yml",
+            "body": "Update playwright.yml",
+            "author": {
+              "name": "Souradeepghosh10",
+              "email": "44546427+Souradeepghosh10@users.noreply.github.com",
+              "time": 1754599510000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1754599510000
+            },
+            "branch": "Master"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+          },
+          "gitCommit": {
+            "shortHash": "c9ee8e0",
+            "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
+            "subject": "Update playwright.yml",
+            "body": "Update playwright.yml",
+            "author": {
+              "name": "Souradeepghosh10",
+              "email": "44546427+Souradeepghosh10@users.noreply.github.com",
+              "time": 1754599510000
+            },
+            "committer": {
+              "name": "GitHub",
+              "email": "noreply@github.com",
+              "time": 1754599510000
+            },
+            "branch": "Master"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 398,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T20:45:40.765Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 373,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T20:45:44.388Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "open google homepage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T20:45:44.767Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b472eb48cb8f980883a3",
+          "file": "example.spec.ts",
+          "line": 18,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "facebook.spec.ts",
+      "file": "facebook.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "End-to-end: Verify Facebook login page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1647,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T20:45:45.200Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cdcd5b3cb6dd168b3b92-f2e57dac7e113ca41c7d",
+          "file": "facebook.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "getStarted.spec.ts",
+      "file": "getStarted.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Navigate to Playwright.dev and click Get Started",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 336,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T20:45:46.852Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b14e89550c971de25b3a-fd085b9c313cc7763930",
+          "file": "getStarted.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "gmail.spec.ts",
+      "file": "gmail.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Validate Gmail page loads",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6010,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22",
+                    "location": {
+                      "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts",
+                      "column": 22,
+                      "line": 8
+                    },
+                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[90m// Step 2: Verify Gmail login page is displayed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Gmail12/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"email\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts",
+                        "column": 22,
+                        "line": 8
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n\n   6 |\n   7 |   // Step 2: Verify Gmail login page is displayed\n>  8 |   await expect(page).toHaveTitle(/Gmail12/);\n     |                      ^\n   9 |   await expect(page.locator('input[type=\"email\"]')).toBeVisible();\n  10 | });\n  11 |\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-07T20:45:47.194Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results/gmail-Validate-Gmail-page-loads-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts",
+                    "column": 22,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f47b94aae46c04d37797-b53b710532905e2cab78",
+          "file": "gmail.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "practice-test-contact.spec.ts",
+      "file": "practice-test-contact.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Practice Test Automation - Contacts Tab",
+          "file": "practice-test-contact.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Validate visible UI elements in Contacts tab",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1432,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:45:53.875Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aa1cb1d86768f75b8eb-4bc22fc6f59f742e49eb",
+              "file": "practice-test-contact.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "Submit contact form with valid data and verify thanks message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1497,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:45:55.414Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aa1cb1d86768f75b8eb-663f439f8b0b00f30480",
+              "file": "practice-test-contact.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "Validate required fields: name, email, message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 981,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:45:56.917Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aa1cb1d86768f75b8eb-a2360ed186dbae4a1fb2",
+              "file": "practice-test-contact.spec.ts",
+              "line": 40,
+              "column": 7
+            },
+            {
+              "title": "Validate email format in contact form",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1071,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:45:57.903Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aa1cb1d86768f75b8eb-bc62bcb790d95f5419e5",
+              "file": "practice-test-contact.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "Validate contact form submission with empty fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1052,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:45:58.978Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aa1cb1d86768f75b8eb-830a0dc076f0cfca5fa0",
+              "file": "practice-test-contact.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "Validate navigation to Contacts tab",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1202,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:46:00.036Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4aa1cb1d86768f75b8eb-3c66a9a78f2dc9cd6c08",
+              "file": "practice-test-contact.spec.ts",
+              "line": 69,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "practice-test-course.spec.ts",
+      "file": "practice-test-course.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Practice Test Automation Courses Page",
+          "file": "practice-test-course.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "All course titles are visible",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 701,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:46:01.246Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cba7dbb5fb620251737c-d9be772b28252088ae3c",
+              "file": "practice-test-course.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "Each course has a description",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 675,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:46:01.953Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cba7dbb5fb620251737c-2634a5ac578efb4b2d76",
+              "file": "practice-test-course.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "Each course has a working Udemy enroll link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 762,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-07T20:46:02.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cba7dbb5fb620251737c-79f5297868f9ddb94d82",
+              "file": "practice-test-course.spec.ts",
+              "line": 48,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-07T20:45:40.082Z",
+    "duration": 23359.756,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
