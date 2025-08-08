@@ -12,24 +12,24 @@
     "maxFailures": 0,
     "metadata": {
       "ci": {
-        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-        "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+        "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/2e097e5e08931395baaa6fc92452d61721de9c7e",
+        "commitHash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+        "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16824466555"
       },
       "gitCommit": {
-        "shortHash": "c9ee8e0",
-        "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-        "subject": "Update playwright.yml",
-        "body": "Update playwright.yml",
+        "shortHash": "2e097e5",
+        "hash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+        "subject": "Update gmail.spec.ts",
+        "body": "Update gmail.spec.ts",
         "author": {
           "name": "Souradeepghosh10",
           "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-          "time": 1754599510000
+          "time": 1754637523000
         },
         "committer": {
           "name": "GitHub",
           "email": "noreply@github.com",
-          "time": 1754599510000
+          "time": 1754637523000
         },
         "branch": "Master"
       },
@@ -63,24 +63,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "commitHash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16824466555"
           },
           "gitCommit": {
-            "shortHash": "c9ee8e0",
-            "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "subject": "Update playwright.yml",
-            "body": "Update playwright.yml",
+            "shortHash": "2e097e5",
+            "hash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "subject": "Update gmail.spec.ts",
+            "body": "Update gmail.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754599510000
+              "time": 1754637523000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754599510000
+              "time": 1754637523000
             },
             "branch": "Master"
           },
@@ -101,24 +101,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "commitHash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16824466555"
           },
           "gitCommit": {
-            "shortHash": "c9ee8e0",
-            "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "subject": "Update playwright.yml",
-            "body": "Update playwright.yml",
+            "shortHash": "2e097e5",
+            "hash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "subject": "Update gmail.spec.ts",
+            "body": "Update gmail.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754599510000
+              "time": 1754637523000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754599510000
+              "time": 1754637523000
             },
             "branch": "Master"
           },
@@ -139,24 +139,24 @@
         "retries": 0,
         "metadata": {
           "ci": {
-            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "commitHash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16815409866"
+            "commitHref": "https://github.com/Souradeepghosh10/Playwright-Project100/commit/2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "commitHash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "buildHref": "https://github.com/Souradeepghosh10/Playwright-Project100/actions/runs/16824466555"
           },
           "gitCommit": {
-            "shortHash": "c9ee8e0",
-            "hash": "c9ee8e06d472ca41c443938d5e00e4f0124deabb",
-            "subject": "Update playwright.yml",
-            "body": "Update playwright.yml",
+            "shortHash": "2e097e5",
+            "hash": "2e097e5e08931395baaa6fc92452d61721de9c7e",
+            "subject": "Update gmail.spec.ts",
+            "body": "Update gmail.spec.ts",
             "author": {
               "name": "Souradeepghosh10",
               "email": "44546427+Souradeepghosh10@users.noreply.github.com",
-              "time": 1754599510000
+              "time": 1754637523000
             },
             "committer": {
               "name": "GitHub",
               "email": "noreply@github.com",
-              "time": 1754599510000
+              "time": 1754637523000
             },
             "branch": "Master"
           },
@@ -202,12 +202,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 398,
+                  "duration": 299,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:45:40.765Z",
+                  "startTime": "2025-08-08T07:19:12.557Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -236,12 +236,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 373,
+                  "duration": 354,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:45:44.388Z",
+                  "startTime": "2025-08-08T07:19:13.067Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -270,12 +270,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 427,
+                  "duration": 569,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:45:44.767Z",
+                  "startTime": "2025-08-08T07:19:13.428Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -312,12 +312,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1647,
+                  "duration": 1611,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:45:45.200Z",
+                  "startTime": "2025-08-08T07:19:14.002Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -354,12 +354,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 336,
+                  "duration": 357,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:45:46.852Z",
+                  "startTime": "2025-08-08T07:19:15.618Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -382,7 +382,7 @@
       "specs": [
         {
           "title": "Validate Gmail page loads",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -395,48 +395,18 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 6010,
-                  "error": {
-                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n",
-                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22",
-                    "location": {
-                      "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts",
-                      "column": 22,
-                      "line": 8
-                    },
-                    "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[90m// Step 2: Verify Gmail login page is displayed\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[35m/Gmail12/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"email\"]'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts",
-                        "column": 22,
-                        "line": 8
-                      },
-                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected pattern: \u001b[32m/Gmail12/\u001b[39m\nReceived string:  \u001b[31m\"Gmail\"\u001b[39m\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m    9 × locator resolved to <html dir=\"ltr\" lang=\"en-US\" class=\"eC9N2e\">…</html>\u001b[22m\n\u001b[2m      - unexpected value \"Gmail\"\u001b[22m\n\n\n   6 |\n   7 |   // Step 2: Verify Gmail login page is displayed\n>  8 |   await expect(page).toHaveTitle(/Gmail12/);\n     |                      ^\n   9 |   await expect(page.locator('input[type=\"email\"]')).toBeVisible();\n  10 | });\n  11 |\n    at /home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts:8:22"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 948,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-08-07T20:45:47.194Z",
+                  "startTime": "2025-08-08T07:19:15.980Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/runner/work/Playwright-Project100/Playwright-Project100/test-results/gmail-Validate-Gmail-page-loads-chromium/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/runner/work/Playwright-Project100/Playwright-Project100/tests/gmail.spec.ts",
-                    "column": 22,
-                    "line": 8
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "f47b94aae46c04d37797-b53b710532905e2cab78",
@@ -472,15 +442,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1432,
+                      "duration": 1520,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:45:53.875Z",
+                      "startTime": "2025-08-08T07:19:16.936Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -506,15 +476,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1497,
+                      "duration": 2126,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:45:55.414Z",
+                      "startTime": "2025-08-08T07:19:18.461Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -540,15 +510,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 981,
+                      "duration": 1090,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:45:56.917Z",
+                      "startTime": "2025-08-08T07:19:20.592Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -574,15 +544,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1071,
+                      "duration": 1005,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:45:57.903Z",
+                      "startTime": "2025-08-08T07:19:21.687Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -608,15 +578,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1052,
+                      "duration": 1153,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:45:58.978Z",
+                      "startTime": "2025-08-08T07:19:22.698Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -642,15 +612,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1202,
+                      "duration": 1074,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:46:00.036Z",
+                      "startTime": "2025-08-08T07:19:23.857Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -693,15 +663,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 701,
+                      "duration": 536,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:46:01.246Z",
+                      "startTime": "2025-08-08T07:19:24.937Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -727,15 +697,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 675,
+                      "duration": 574,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:46:01.953Z",
+                      "startTime": "2025-08-08T07:19:25.477Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -761,15 +731,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 762,
+                      "duration": 542,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-08-07T20:46:02.632Z",
+                      "startTime": "2025-08-08T07:19:26.055Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -789,11 +759,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-08-07T20:45:40.082Z",
-    "duration": 23359.756,
-    "expected": 14,
+    "startTime": "2025-08-08T07:19:11.892Z",
+    "duration": 14758.610999999999,
+    "expected": 15,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
