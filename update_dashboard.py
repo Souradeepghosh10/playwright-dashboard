@@ -4,7 +4,7 @@ from datetime import datetime
 from jinja2 import Template
 
 # Folder containing date-wise test reports
-data_folder = "data"
+data_folder = "Reports"
 report_data = {}
 
 # Filter and sort only valid date folders (format: YYYY-MM-DD)
