@@ -46,7 +46,7 @@ template_html = """
     <ul>
     {% for date, stats in report_data.items() %}
         <li>
-            <a href="data/{{ date }}/index.html" target="_blank">{{ date }}</a>
+            <a href="Reports/{{ date }}/index.html" target="_blank">{{ date }}</a>
             &nbsp;✅ {{ stats.passed }} ❌ {{ stats.failed }}
         </li>
     {% endfor %}
