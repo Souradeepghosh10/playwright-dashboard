@@ -7,13 +7,21 @@ from jinja2 import Template
 data_folder = "Reports"
 report_data = {}
 
-# Filter and sort only valid date folders (format: YYYY-MM-DD)
+# Ensure Reports folder exists to avoid FileNotFoundError
+if not os.path.exists(data_folder):
+    print(f"⚠️ '{data_folder}' folder not found. Exiting.")
+    exit(0)
+
+# Filter and sort only valid date folders (format: YYYY-MM-DD), newest first
 date_folders = [
     d for d in os.listdir(data_folder)
-    if os.path.isdir(os.path.join(data_folder, d)) and len(d) == 10 and d[4] == '-' and d[7] == '-'
+    if os.path.isdir(os.path.join(data_folder, d))
+    and len(d) == 10
+    and d[4] == '-'
+    and d[7] == '-'
 ]
 
-sorted_dates = sorted(date_folders, key=lambda d: datetime.strptime(d, "%Y-%m-%d"))
+sorted_dates = sorted(date_folders, key=lambda d: datetime.strptime(d, "%Y-%m-%d"), reverse=True)
 
 # Collect passed/failed counts from each report.json
 for date_dir in sorted_dates:
@@ -46,7 +54,7 @@ template_html = """
     <ul>
     {% for date, stats in report_data.items() %}
         <li>
-            <a href="Reports/{{ date }}/index.html" target="_blank">{{ date }}</a>
+            <a href="Reports/{{ date }}/html-report/index.html" target="_blank">{{ date }}</a>
             &nbsp;✅ {{ stats.passed }} ❌ {{ stats.failed }}
         </li>
     {% endfor %}
