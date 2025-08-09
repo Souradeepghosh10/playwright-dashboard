@@ -30,27 +30,35 @@ for date_folder in sorted(os.listdir(reports_dir)):
 
         passed = 0
         failed = 0
-
-        # Use a set to track test ids or names, so no duplicates
         seen_tests = set()
 
         for suite in data.get("suites", []):
+            # Count tests directly inside suite (if any)
+            for test in suite.get("tests", []):
+                test_id = test.get("id") or test.get("title")
+                if test_id in seen_tests:
+                    continue
+                seen_tests.add(test_id)
+                results = test.get("results", [])
+                if not results:
+                    continue
+                final_status = results[-1].get("status")
+                if final_status == "passed":
+                    passed += 1
+                elif final_status == "failed":
+                    failed += 1
+
+            # Count tests inside specs (if any)
             for spec in suite.get("specs", []):
                 for test in spec.get("tests", []):
-                    test_id = test.get("id") or test.get("title")  # use id if present else title
-
+                    test_id = test.get("id") or test.get("title")
                     if test_id in seen_tests:
-                        # Already counted this test, skip to avoid duplicates
                         continue
                     seen_tests.add(test_id)
-
                     results = test.get("results", [])
                     if not results:
                         continue
-
-                    # Use last result as final status
                     final_status = results[-1].get("status")
-
                     if final_status == "passed":
                         passed += 1
                     elif final_status == "failed":
@@ -131,4 +139,4 @@ html_content = template.render(reports=report_links, trend_data=trend_data)
 with open(output_html, "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("✅ Dashboard updated: index.html + trend.json")
+pr
