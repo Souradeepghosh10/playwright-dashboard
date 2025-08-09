@@ -7,6 +7,50 @@ reports_dir = "Reports"
 output_html = "index.html"
 trend_file = "trend.json"
 
+def count_tests_in_suites(suites, seen_tests):
+    passed = 0
+    failed = 0
+
+    for suite in suites:
+        # Count tests directly inside this suite
+        for test in suite.get("tests", []):
+            test_id = test.get("id") or test.get("title")
+            if test_id in seen_tests:
+                continue
+            seen_tests.add(test_id)
+            results = test.get("results", [])
+            if not results:
+                continue
+            final_status = results[-1].get("status")
+            if final_status == "passed":
+                passed += 1
+            elif final_status == "failed":
+                failed += 1
+
+        # Count tests inside specs in this suite
+        for spec in suite.get("specs", []):
+            for test in spec.get("tests", []):
+                test_id = test.get("id") or test.get("title")
+                if test_id in seen_tests:
+                    continue
+                seen_tests.add(test_id)
+                results = test.get("results", [])
+                if not results:
+                    continue
+                final_status = results[-1].get("status")
+                if final_status == "passed":
+                    passed += 1
+                elif final_status == "failed":
+                    failed += 1
+
+        # Recurse into nested suites if any
+        if "suites" in suite:
+            p, f = count_tests_in_suites(suite["suites"], seen_tests)
+            passed += p
+            failed += f
+
+    return passed, failed
+
 report_links = []
 trend_data = []
 
@@ -24,45 +68,11 @@ for date_folder in sorted(os.listdir(reports_dir)):
             "html_link": f"{reports_dir}/{date_folder}/html-report/index.html"
         })
 
-        # Open and load JSON report
         with open(report_json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        passed = 0
-        failed = 0
-        seen_tests = set()  # <-- Move here, outside suites loop
-
-        for suite in data.get("suites", []):
-            # Count tests directly inside suite (if any)
-            for test in suite.get("tests", []):
-                test_id = test.get("id") or test.get("title")
-                if test_id in seen_tests:
-                    continue
-                seen_tests.add(test_id)
-                results = test.get("results", [])
-                if not results:
-                    continue
-                final_status = results[-1].get("status")
-                if final_status == "passed":
-                    passed += 1
-                elif final_status == "failed":
-                    failed += 1
-
-            # Count tests inside specs (if any)
-            for spec in suite.get("specs", []):
-                for test in spec.get("tests", []):
-                    test_id = test.get("id") or test.get("title")
-                    if test_id in seen_tests:
-                        continue
-                    seen_tests.add(test_id)
-                    results = test.get("results", [])
-                    if not results:
-                        continue
-                    final_status = results[-1].get("status")
-                    if final_status == "passed":
-                        passed += 1
-                    elif final_status == "failed":
-                        failed += 1
+        seen_tests = set()
+        passed, failed = count_tests_in_suites(data.get("suites", []), seen_tests)
 
         trend_data.append({
             "date": date_folder,
