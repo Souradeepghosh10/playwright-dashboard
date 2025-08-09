@@ -39,6 +39,6 @@ jobs:
           git stash || echo "No local changes to stash"
           git pull --rebase origin main
           git stash pop || echo "No stashed changes to pop"
-          git add index.html
+          git add index.html trend.json
           git commit -m "Update dashboard" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Souradeepghosh10/playwright-dashboard.git HEAD:main
