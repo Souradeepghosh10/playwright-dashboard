@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>Playwright Reports Dashboard</h1>
-
     <h2>Test Execution History</h2>
     <ul>
     
@@ -27,10 +26,8 @@
         </li>
     
     </ul>
-
     <h2>Test Trends</h2>
     <canvas id="trendChart" width="800" height="400"></canvas>
-
     <script>
         const trendData = [{"date": "2025-08-07", "failed": 0, "passed": 1}, {"date": "2025-08-08", "failed": 0, "passed": 1}, {"date": "2025-08-10", "failed": 0, "passed": 1}];
         const labels = trendData.map(d => d.date);
@@ -42,24 +39,11 @@
             data: {
                 labels: labels,
                 datasets: [
-                    {
-                        label: 'Passed',
-                        backgroundColor: 'green',
-                        data: passed
-                    },
-                    {
-                        label: 'Failed',
-                        backgroundColor: 'red',
-                        data: failed
-                    }
+                    { label: 'Passed', backgroundColor: 'green', data: passed },
+                    { label: 'Failed', backgroundColor: 'red', data: failed }
                 ]
             },
-            options: {
-                responsive: true,
-                scales: {
-                    y: { beginAtZero: true }
-                }
-            }
+            options: { responsive: true, scales: { y: { beginAtZero: true } } }
         });
     </script>
 </body>
