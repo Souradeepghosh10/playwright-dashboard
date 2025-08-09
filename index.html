@@ -11,11 +11,20 @@
     <h2>Test Execution History</h2>
     <ul>
     
-        <li><a href="Reports/2025-08-07/html-report/index.html" target="_blank">2025-08-07</a> &nbsp;✅ 5 ❌ 1</li>
+        <li>
+            <a href="Reports/2025-08-07/html-report/index.html" target="_blank">2025-08-07</a>
+            &nbsp;✅ 1 ❌ 0
+        </li>
     
-        <li><a href="Reports/2025-08-08/html-report/index.html" target="_blank">2025-08-08</a> &nbsp;✅ 6 ❌ 0</li>
+        <li>
+            <a href="Reports/2025-08-08/html-report/index.html" target="_blank">2025-08-08</a>
+            &nbsp;✅ 1 ❌ 0
+        </li>
     
-        <li><a href="Reports/2025-08-10/html-report/index.html" target="_blank">2025-08-10</a> &nbsp;✅ 6 ❌ 0</li>
+        <li>
+            <a href="Reports/2025-08-10/html-report/index.html" target="_blank">2025-08-10</a>
+            &nbsp;✅ 1 ❌ 0
+        </li>
     
     </ul>
 
@@ -23,7 +32,7 @@
     <canvas id="trendChart" width="800" height="400"></canvas>
 
     <script>
-        const trendData = [{"date": "2025-08-07", "failed": 1, "passed": 5}, {"date": "2025-08-08", "failed": 0, "passed": 6}, {"date": "2025-08-10", "failed": 0, "passed": 6}];
+        const trendData = [{"date": "2025-08-07", "failed": 0, "passed": 1}, {"date": "2025-08-08", "failed": 0, "passed": 1}, {"date": "2025-08-10", "failed": 0, "passed": 1}];
         const labels = trendData.map(d => d.date);
         const passed = trendData.map(d => d.passed);
         const failed = trendData.map(d => d.failed);

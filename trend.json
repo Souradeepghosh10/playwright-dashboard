@@ -1,17 +1,17 @@
 [
   {
     "date": "2025-08-07",
-    "passed": 5,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   },
   {
     "date": "2025-08-08",
-    "passed": 6,
+    "passed": 1,
     "failed": 0
   },
   {
     "date": "2025-08-10",
-    "passed": 6,
+    "passed": 1,
     "failed": 0
   }
 ]
