@@ -4,17 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>Playwright Test Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
         h1 { color: #333; }
         ul { list-style: none; padding: 0; }
         li { margin: 8px 0; }
         a { text-decoration: none; font-weight: bold; color: #007acc; }
+        canvas { max-width: 800px; }
     </style>
 </head>
 <body>
     <h1>📊 Playwright Test Dashboard</h1>
     <h2>📅 Daily Reports (Last 3 Days)</h2>
+    <canvas id="testChart"></canvas>
     <ul>
     
         <li>
@@ -33,5 +36,33 @@
         </li>
     
     </ul>
+
+    <script>
+        fetch('trend.json')
+            .then(response => response.json())
+            .then(data => {
+                const ctx = document.getElementById('testChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.map(d => d.date),
+                        datasets: [
+                            {
+                                label: 'Passed',
+                                data: data.map(d => d.passed),
+                                borderColor: 'green',
+                                fill: false
+                            },
+                            {
+                                label: 'Failed',
+                                data: data.map(d => d.failed),
+                                borderColor: 'red',
+                                fill: false
+                            }
+                        ]
+                    }
+                });
+            });
+    </script>
 </body>
 </html>
