@@ -1,107 +1,37 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Playwright Test Dashboard</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body { font-family: Arial; padding: 20px; }
-    h1 { margin-top: 0; }
-    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-    th, td { padding: 8px 12px; border: 1px solid #ccc; }
-    th { background-color: #f4f4f4; }
-    .fail { color: red; }
-    .pass { color: green; }
-  </style>
+    <meta charset="utf-8">
+    <title>Playwright Test Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 8px 0; }
+        a { text-decoration: none; font-weight: bold; color: #007acc; }
+    </style>
 </head>
 <body>
-  <h1>📊 Playwright Test Dashboard</h1>
-  <canvas id="trendChart" width="800" height="300"></canvas>
-  <h2>📅 Daily Reports</h2>
-  <div id="reportLinks"></div>
-  <h2>⚠️ Unstable Test Cases (last 30 days)</h2>
-  <div id="unstableTests"></div>
-
-  <script>
-    async function fetchReport(date) {
-      const url = `Reports/${date}/report.json`;
-      try {
-        const res = await fetch(url);
-        if (!res.ok) return null;
-        return await res.json();
-      } catch {
-        return null;
-      }
-    }
-
-    async function loadDashboard() {
-      const today = new Date();
-      const reports = [];
-      const failures = {};
-
-      for (let i = 29; i >= 0; i--) {
-        const date = new Date(today);
-        date.setDate(today.getDate() - i);
-        const formatted = date.toISOString().split('T')[0];
-        const json = await fetchReport(formatted);
-        if (json) {
-          const failed = json.stats.unexpected || 0;
-          const passed = json.stats.expected || 0;
-          reports.push({ date: formatted, passed, failed });
-
-          json.suites?.forEach(suite => {
-            suite.tests?.forEach(test => {
-              if (test.status === 'failed') {
-                const key = test.title.join(' > ');
-                failures[key] = (failures[key] || 0) + 1;
-              }
-            });
-          });
-        }
-      }
-
-      // Chart
-      const ctx = document.getElementById('trendChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: reports.map(r => r.date),
-          datasets: [
-            {
-              label: 'Passed',
-              data: reports.map(r => r.passed),
-              borderColor: 'green',
-              fill: false
-            },
-            {
-              label: 'Failed',
-              data: reports.map(r => r.failed),
-              borderColor: 'red',
-              fill: false
-            }
-          ]
-        },
-        options: { responsive: true }
-      });
-
-      // Links
-      const reportLinks = reports.map(r => {
-        return `<li><a href="Reports/${r.date}/html-report/index.html" target="_blank">${r.date}</a> ✅ ${r.passed} ❌ ${r.failed}</li>`;
-      }).join('');
-      document.getElementById('reportLinks').innerHTML = `<ul>${reportLinks}</ul>`;
-
-      // Unstable tests
-      const sorted = Object.entries(failures).sort((a, b) => b[1] - a[1]);
-      const unstableHTML = sorted.length === 0
-        ? `<p>No unstable tests found!</p>`
-        : `<table><thead><tr><th>Test Case</th><th>Failure Count</th></tr></thead><tbody>` +
-          sorted.map(([name, count]) => `<tr><td>${name}</td><td>${count}</td></tr>`).join('') +
-          `</tbody></table>`;
-      document.getElementById('unstableTests').innerHTML = unstableHTML;
-    }
-
-    loadDashboard();
-  </script>
+    <h1>📊 Playwright Test Dashboard</h1>
+    <h2>📅 Daily Reports (Last 3 Days)</h2>
+    <ul>
+    
+        <li>
+            <a href="Reports/2025-08-10/html-report/index.html" target="_blank">2025-08-10</a>
+            &nbsp;✅ 0 ❌ 0
+        </li>
+    
+        <li>
+            <a href="Reports/2025-08-08/html-report/index.html" target="_blank">2025-08-08</a>
+            &nbsp;✅ 0 ❌ 0
+        </li>
+    
+        <li>
+            <a href="Reports/2025-08-07/html-report/index.html" target="_blank">2025-08-07</a>
+            &nbsp;✅ 0 ❌ 0
+        </li>
+    
+    </ul>
 </body>
 </html>
