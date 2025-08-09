@@ -139,4 +139,4 @@ html_content = template.render(reports=report_links, trend_data=trend_data)
 with open(output_html, "w", encoding="utf-8") as f:
     f.write(html_content)
 
-pr
+print("✅ Dashboard updated: index.html + trend.json")
