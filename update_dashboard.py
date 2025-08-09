@@ -32,6 +32,7 @@ for date_folder in sorted(os.listdir(reports_dir)):
         failed = 0
         seen_tests = set()
 
+        # Initialize counts before looping suites
         for suite in data.get("suites", []):
             # Count tests directly inside suite (if any)
             for test in suite.get("tests", []):
