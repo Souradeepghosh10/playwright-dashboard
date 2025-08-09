@@ -24,6 +24,7 @@ date_folders = [
 sorted_dates = sorted(date_folders, key=lambda d: datetime.strptime(d, "%Y-%m-%d"), reverse=True)
 
 # Parse each report.json and count pass/fail
+trend_data = []
 for date_dir in sorted_dates:
     full_path = os.path.join(data_folder, date_dir, "report.json")
     if os.path.exists(full_path):
@@ -45,25 +46,33 @@ for date_dir in sorted_dates:
                             failed += 1
 
         report_data[date_dir] = {"passed": passed, "failed": failed}
+        trend_data.append({"date": date_dir, "passed": passed, "failed": failed})
 
-# Jinja2 HTML Template
+# Save trend.json for graph
+with open("trend.json", "w", encoding="utf-8") as f:
+    json.dump(trend_data[::-1], f, indent=2)  # reverse to oldest→newest
+
+# Jinja2 HTML Template with Chart.js graph
 template_html = """
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Playwright Test Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
         h1 { color: #333; }
         ul { list-style: none; padding: 0; }
         li { margin: 8px 0; }
         a { text-decoration: none; font-weight: bold; color: #007acc; }
+        canvas { max-width: 800px; }
     </style>
 </head>
 <body>
     <h1>📊 Playwright Test Dashboard</h1>
     <h2>📅 Daily Reports (Last {{ report_data|length }} Days)</h2>
+    <canvas id="testChart"></canvas>
     <ul>
     {% for date, stats in report_data.items() %}
         <li>
@@ -72,6 +81,34 @@ template_html = """
         </li>
     {% endfor %}
     </ul>
+
+    <script>
+        fetch('trend.json')
+            .then(response => response.json())
+            .then(data => {
+                const ctx = document.getElementById('testChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.map(d => d.date),
+                        datasets: [
+                            {
+                                label: 'Passed',
+                                data: data.map(d => d.passed),
+                                borderColor: 'green',
+                                fill: false
+                            },
+                            {
+                                label: 'Failed',
+                                data: data.map(d => d.failed),
+                                borderColor: 'red',
+                                fill: false
+                            }
+                        ]
+                    }
+                });
+            });
+    </script>
 </body>
 </html>
 """
@@ -83,4 +120,4 @@ rendered = template.render(report_data=report_data)
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(rendered)
 
-print("✅ Dashboard generated successfully.")
+print("✅ Dashboard and trend.json generated successfully.")
