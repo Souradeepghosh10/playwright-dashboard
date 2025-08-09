@@ -26,11 +26,20 @@ for date_folder in sorted(os.listdir(reports_dir)):
             "html_link": f"{reports_dir}/{date_folder}/html-report/index.html"
         })
 
-        # Step 2: Extract pass/fail counts
+        # Step 2: Extract pass/fail counts correctly
         with open(report_json_path, "r") as f:
             data = json.load(f)
-            passed = sum(1 for r in data['suites'] if r['status'] == "passed")
-            failed = sum(1 for r in data['suites'] if r['status'] == "failed")
+            passed = 0
+            failed = 0
+            for suite in data.get("suites", []):
+                for spec in suite.get("specs", []):
+                    for test in spec.get("tests", []):
+                        for result in test.get("results", []):
+                            status = result.get("status")
+                            if status == "passed":
+                                passed += 1
+                            elif status == "failed":
+                                failed += 1
 
         trend_data.append({
             "date": date_folder,
