@@ -11,11 +11,11 @@
     <h2>Test Execution History</h2>
     <ul>
     
-        <li><a href="Reports/2025-08-07/html-report/index.html">2025-08-07</a></li>
+        <li><a href="Reports/2025-08-07/html-report/index.html" target="_blank">2025-08-07</a> &nbsp;✅ 5 ❌ 1</li>
     
-        <li><a href="Reports/2025-08-08/html-report/index.html">2025-08-08</a></li>
+        <li><a href="Reports/2025-08-08/html-report/index.html" target="_blank">2025-08-08</a> &nbsp;✅ 6 ❌ 0</li>
     
-        <li><a href="Reports/2025-08-10/html-report/index.html">2025-08-10</a></li>
+        <li><a href="Reports/2025-08-10/html-report/index.html" target="_blank">2025-08-10</a> &nbsp;✅ 6 ❌ 0</li>
     
     </ul>
 
@@ -23,33 +23,35 @@
     <canvas id="trendChart" width="800" height="400"></canvas>
 
     <script>
-        fetch('trend.json')
-            .then(response => response.json())
-            .then(data => {
-                const labels = data.map(d => d.date);
-                const passed = data.map(d => d.passed);
-                const failed = data.map(d => d.failed);
+        const trendData = [{"date": "2025-08-07", "failed": 1, "passed": 5}, {"date": "2025-08-08", "failed": 0, "passed": 6}, {"date": "2025-08-10", "failed": 0, "passed": 6}];
+        const labels = trendData.map(d => d.date);
+        const passed = trendData.map(d => d.passed);
+        const failed = trendData.map(d => d.failed);
 
-                new Chart(document.getElementById('trendChart'), {
-                    type: 'bar',
-                    data: {
-                        labels: labels,
-                        datasets: [
-                            {
-                                label: 'Passed',
-                                backgroundColor: 'green',
-                                data: passed
-                            },
-                            {
-                                label: 'Failed',
-                                backgroundColor: 'red',
-                                data: failed
-                            }
-                        ]
+        new Chart(document.getElementById('trendChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Passed',
+                        backgroundColor: 'green',
+                        data: passed
                     },
-                    options: { responsive: true, scales: { y: { beginAtZero: true } } }
-                });
-            });
+                    {
+                        label: 'Failed',
+                        backgroundColor: 'red',
+                        data: failed
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
     </script>
 </body>
 </html>
