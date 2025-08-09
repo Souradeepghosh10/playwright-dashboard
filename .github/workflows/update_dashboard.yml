@@ -3,23 +3,27 @@ name: Update Playwright Dashboard
 on:
   push:
     paths:
-      - 'Reports/**'  # Trigger when new reports are pushed
-  workflow_dispatch:  # Allow manual trigger
+      - 'Reports/**'
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Required to push changes
+  contents: write
 
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout dashboard repo
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          repository: Souradeepghosh10/playwright-dashboard
-          token: ${{ secrets.GH_PAT }}  # GitHub personal access token
+          token: ${{ secrets.GH_PAT }}
           ref: main
+
+      - name: List Reports folder (debug)
+        run: |
+          echo "Listing Reports directory content"
+          ls -l Reports || echo "Reports folder not found"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,18 +33,25 @@ jobs:
       - name: Install dependencies
         run: pip install jinja2
 
-      - name: Generate index.html
-        run: python update_dashboard.py
-
-      - name: Show files and git status
+      - name: Generate dashboard files
         run: |
-          ls -l index.html trend.json
-          git status
+          python update_dashboard.py
+          echo "=== trend.json content ==="
+          cat trend.json
 
-      - name: Commit and push dashboard
+      - name: Show git status and diff
+        run: |
+          git status
+          git diff index.html trend.json
+
+      - name: Commit and push if changes detected
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "github-actions"
           git add index.html trend.json
-          git diff --cached --quiet || git commit -m "Update dashboard"
-          git push origin main
+          if ! git diff --cached --quiet; then
+            git commit -m "Update dashboard"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
