@@ -3,109 +3,92 @@ import json
 from datetime import datetime
 from jinja2 import Template
 
-# Folder containing date-wise test reports
-data_folder = "Reports"
-report_data = {}
+reports_dir = "Reports"
+output_html = "index.html"
+trend_file = "trend.json"
 
-# Ensure Reports folder exists
-if not os.path.exists(data_folder):
-    print(f"⚠️ '{data_folder}' folder not found. Exiting.")
-    exit(0)
-
-# Get only valid date folders (YYYY-MM-DD) and sort newest first
-date_folders = [
-    d for d in os.listdir(data_folder)
-    if os.path.isdir(os.path.join(data_folder, d))
-    and len(d) == 10
-    and d[4] == '-'
-    and d[7] == '-'
-]
-
-sorted_dates = sorted(date_folders, key=lambda d: datetime.strptime(d, "%Y-%m-%d"), reverse=True)
-
-# Parse each report.json and count pass/fail
+# --- Step 1: Scan report folders ---
+report_links = []
 trend_data = []
-for date_dir in sorted_dates:
-    full_path = os.path.join(data_folder, date_dir, "report.json")
-    if os.path.exists(full_path):
-        with open(full_path, "r", encoding="utf-8") as f:
+
+for date_folder in sorted(os.listdir(reports_dir)):
+    date_path = os.path.join(reports_dir, date_folder)
+    if not os.path.isdir(date_path):
+        continue
+
+    report_json_path = os.path.join(date_path, "report.json")
+    html_report_path = os.path.join(date_path, "html-report", "index.html")
+
+    if os.path.exists(report_json_path) and os.path.exists(html_report_path):
+        # Link for dashboard
+        report_links.append({
+            "date": date_folder,
+            "html_link": f"{reports_dir}/{date_folder}/html-report/index.html"
+        })
+
+        # Step 2: Extract pass/fail counts
+        with open(report_json_path, "r") as f:
             data = json.load(f)
+            passed = sum(1 for r in data['suites'] if r['status'] == "passed")
+            failed = sum(1 for r in data['suites'] if r['status'] == "failed")
 
-        passed = 0
-        failed = 0
+        trend_data.append({
+            "date": date_folder,
+            "passed": passed,
+            "failed": failed
+        })
 
-        # Traverse nested Playwright JSON structure
-        for suite in data.get("suites", []):
-            for spec in suite.get("specs", []):
-                for test in spec.get("tests", []):
-                    for result in test.get("results", []):
-                        status = result.get("status")
-                        if status == "passed":
-                            passed += 1
-                        elif status == "failed":
-                            failed += 1
+# --- Step 3: Write trend.json ---
+with open(trend_file, "w") as f:
+    json.dump(trend_data, f, indent=2)
 
-        report_data[date_dir] = {"passed": passed, "failed": failed}
-        trend_data.append({"date": date_dir, "passed": passed, "failed": failed})
-
-# Save trend.json for graph
-with open("trend.json", "w", encoding="utf-8") as f:
-    json.dump(trend_data[::-1], f, indent=2)  # reverse to oldest→newest
-
-# Jinja2 HTML Template with Chart.js graph
-template_html = """
+# --- Step 4: Build HTML using Jinja2 ---
+template_str = """
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Playwright Test Dashboard</title>
+    <title>Playwright Reports Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        h1 { color: #333; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 8px 0; }
-        a { text-decoration: none; font-weight: bold; color: #007acc; }
-        canvas { max-width: 800px; }
-    </style>
 </head>
 <body>
-    <h1>📊 Playwright Test Dashboard</h1>
-    <h2>📅 Daily Reports (Last {{ report_data|length }} Days)</h2>
-    <canvas id="testChart"></canvas>
+    <h1>Playwright Reports Dashboard</h1>
+
+    <h2>Test Execution History</h2>
     <ul>
-    {% for date, stats in report_data.items() %}
-        <li>
-            <a href="Reports/{{ date }}/html-report/index.html" target="_blank">{{ date }}</a>
-            &nbsp;✅ {{ stats.passed }} ❌ {{ stats.failed }}
-        </li>
+    {% for report in reports %}
+        <li><a href="{{ report.html_link }}">{{ report.date }}</a></li>
     {% endfor %}
     </ul>
+
+    <h2>Test Trends</h2>
+    <canvas id="trendChart" width="800" height="400"></canvas>
 
     <script>
         fetch('trend.json')
             .then(response => response.json())
             .then(data => {
-                const ctx = document.getElementById('testChart').getContext('2d');
-                new Chart(ctx, {
-                    type: 'line',
+                const labels = data.map(d => d.date);
+                const passed = data.map(d => d.passed);
+                const failed = data.map(d => d.failed);
+
+                new Chart(document.getElementById('trendChart'), {
+                    type: 'bar',
                     data: {
-                        labels: data.map(d => d.date),
+                        labels: labels,
                         datasets: [
                             {
                                 label: 'Passed',
-                                data: data.map(d => d.passed),
-                                borderColor: 'green',
-                                fill: false
+                                backgroundColor: 'green',
+                                data: passed
                             },
                             {
                                 label: 'Failed',
-                                data: data.map(d => d.failed),
-                                borderColor: 'red',
-                                fill: false
+                                backgroundColor: 'red',
+                                data: failed
                             }
                         ]
-                    }
+                    },
+                    options: { responsive: true, scales: { y: { beginAtZero: true } } }
                 });
             });
     </script>
@@ -113,11 +96,10 @@ template_html = """
 </html>
 """
 
-# Render and write to index.html
-template = Template(template_html)
-rendered = template.render(report_data=report_data)
+template = Template(template_str)
+html_content = template.render(reports=report_links)
 
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(rendered)
+with open(output_html, "w") as f:
+    f.write(html_content)
 
-print("✅ Dashboard and trend.json generated successfully.")
+print("Dashboard updated: index.html + trend.json")
