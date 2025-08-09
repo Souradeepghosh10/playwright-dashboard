@@ -1,125 +1,44 @@
-import os
-import json
-from datetime import datetime
-from jinja2 import Template
+name: Update Playwright Dashboard
 
-reports_dir = "Reports"
-output_html = "index.html"
-trend_file = "trend.json"
+on:
+  push:
+    paths:
+      - 'Reports/**'  # Trigger when new reports are pushed
+  workflow_dispatch:  # Allow manual trigger
 
-# --- Step 1: Scan report folders ---
-report_links = []
-trend_data = []
+permissions:
+  contents: write  # Required to push changes
 
-for date_folder in sorted(os.listdir(reports_dir)):
-    date_path = os.path.join(reports_dir, date_folder)
-    if not os.path.isdir(date_path):
-        continue
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
 
-    report_json_path = os.path.join(date_path, "report.json")
-    html_report_path = os.path.join(date_path, "html-report", "index.html")
+    steps:
+      - name: Checkout dashboard repo
+        uses: actions/checkout@v4
+        with:
+          repository: Souradeepghosh10/playwright-dashboard
+          token: ${{ secrets.GH_PAT }}  # GitHub personal access token
+          ref: main
 
-    if os.path.exists(report_json_path) and os.path.exists(html_report_path):
-        # Link for dashboard
-        report_links.append({
-            "date": date_folder,
-            "html_link": f"{reports_dir}/{date_folder}/html-report/index.html"
-        })
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-        # Step 2: Extract pass/fail counts with nested traversal
-        with open(report_json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            passed = 0
-            failed = 0
-            for suite in data.get("suites", []):
-                for spec in suite.get("specs", []):
-                    for test in spec.get("tests", []):
-                        for result in test.get("results", []):
-                            status = result.get("status")
-                            if status == "passed":
-                                passed += 1
-                            elif status == "failed":
-                                failed += 1
+      - name: Install dependencies
+        run: pip install jinja2
 
-        trend_data.append({
-            "date": date_folder,
-            "passed": passed,
-            "failed": failed
-        })
+      - name: Generate index.html
+        run: python update_dashboard.py
 
-# --- Step 3: Write trend.json ---
-with open(trend_file, "w", encoding="utf-8") as f:
-    json.dump(trend_data, f, indent=2)
-
-# --- Step 4: Build HTML using Jinja2 ---
-template_str = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Playwright Reports Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        h1 { color: #333; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 8px 0; }
-        a { text-decoration: none; font-weight: bold; color: #007acc; }
-        canvas { max-width: 800px; }
-    </style>
-</head>
-<body>
-    <h1>📊 Playwright Reports Dashboard</h1>
-
-    <h2>Test Execution History</h2>
-    <ul>
-    {% for report in reports %}
-        <li><a href="{{ report.html_link }}" target="_blank">{{ report.date }}</a></li>
-    {% endfor %}
-    </ul>
-
-    <h2>Test Trends</h2>
-    <canvas id="trendChart" width="800" height="400"></canvas>
-
-    <script>
-        fetch('trend.json')
-            .then(response => response.json())
-            .then(data => {
-                const labels = data.map(d => d.date);
-                const passed = data.map(d => d.passed);
-                const failed = data.map(d => d.failed);
-
-                new Chart(document.getElementById('trendChart'), {
-                    type: 'bar',
-                    data: {
-                        labels: labels,
-                        datasets: [
-                            {
-                                label: 'Passed',
-                                backgroundColor: 'green',
-                                data: passed
-                            },
-                            {
-                                label: 'Failed',
-                                backgroundColor: 'red',
-                                data: failed
-                            }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        scales: { y: { beginAtZero: true } }
-                    }
-                });
-            });
-    </script>
-</body>
-</html>
-"""
-
-template = Template(template_str)
-html_content = template.render(reports=report_links)
-
-with open(output_html, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-print("✅ Dashboard updated: index.html + trend.json")
+      - name: Commit and push dashboard
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git stash || echo "No local changes to stash"
+          git pull --rebase origin main
+          git stash pop || echo "No stashed changes to pop"
+          git add index.html
+          git commit -m "Update dashboard" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Souradeepghosh10/playwright-dashboard.git HEAD:main
