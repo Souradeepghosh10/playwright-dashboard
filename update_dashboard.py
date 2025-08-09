@@ -1,55 +1,10 @@
 import os
 import json
-from datetime import datetime
 from jinja2 import Template
 
 reports_dir = "Reports"
 output_html = "index.html"
 trend_file = "trend.json"
-
-def count_tests_in_suites(suites, seen_tests):
-    passed = 0
-    failed = 0
-
-    for suite in suites:
-        # Count tests directly inside this suite
-        for test in suite.get("tests", []):
-            test_id = test.get("id") or test.get("title")
-            if test_id in seen_tests:
-                continue
-            seen_tests.add(test_id)
-            results = test.get("results", [])
-            if not results:
-                continue
-            final_status = results[-1].get("status")
-            if final_status == "passed":
-                passed += 1
-            elif final_status == "failed":
-                failed += 1
-
-        # Count tests inside specs in this suite
-        for spec in suite.get("specs", []):
-            for test in spec.get("tests", []):
-                test_id = test.get("id") or test.get("title")
-                if test_id in seen_tests:
-                    continue
-                seen_tests.add(test_id)
-                results = test.get("results", [])
-                if not results:
-                    continue
-                final_status = results[-1].get("status")
-                if final_status == "passed":
-                    passed += 1
-                elif final_status == "failed":
-                    failed += 1
-
-        # Recurse into nested suites if any
-        if "suites" in suite:
-            p, f = count_tests_in_suites(suite["suites"], seen_tests)
-            passed += p
-            failed += f
-
-    return passed, failed
 
 report_links = []
 trend_data = []
@@ -71,8 +26,39 @@ for date_folder in sorted(os.listdir(reports_dir)):
         with open(report_json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
+        passed = 0
+        failed = 0
         seen_tests = set()
-        passed, failed = count_tests_in_suites(data.get("suites", []), seen_tests)
+
+        for suite in data.get("suites", []):
+            for test in suite.get("tests", []):
+                test_id = test.get("id") or test.get("title")
+                if test_id in seen_tests:
+                    continue
+                seen_tests.add(test_id)
+                results = test.get("results", [])
+                if not results:
+                    continue
+                status = results[-1].get("status")
+                if status == "passed":
+                    passed += 1
+                elif status == "failed":
+                    failed += 1
+
+            for spec in suite.get("specs", []):
+                for test in spec.get("tests", []):
+                    test_id = test.get("id") or test.get("title")
+                    if test_id in seen_tests:
+                        continue
+                    seen_tests.add(test_id)
+                    results = test.get("results", [])
+                    if not results:
+                        continue
+                    status = results[-1].get("status")
+                    if status == "passed":
+                        passed += 1
+                    elif status == "failed":
+                        failed += 1
 
         trend_data.append({
             "date": date_folder,
@@ -80,11 +66,9 @@ for date_folder in sorted(os.listdir(reports_dir)):
             "failed": failed
         })
 
-# Write trend.json
 with open(trend_file, "w", encoding="utf-8") as f:
     json.dump(trend_data, f, indent=2)
 
-# Jinja2 HTML template
 template_str = """
 <!DOCTYPE html>
 <html>
@@ -94,7 +78,6 @@ template_str = """
 </head>
 <body>
     <h1>Playwright Reports Dashboard</h1>
-
     <h2>Test Execution History</h2>
     <ul>
     {% for report in reports %}
@@ -104,10 +87,8 @@ template_str = """
         </li>
     {% endfor %}
     </ul>
-
     <h2>Test Trends</h2>
     <canvas id="trendChart" width="800" height="400"></canvas>
-
     <script>
         const trendData = {{ trend_data | tojson }};
         const labels = trendData.map(d => d.date);
@@ -119,24 +100,11 @@ template_str = """
             data: {
                 labels: labels,
                 datasets: [
-                    {
-                        label: 'Passed',
-                        backgroundColor: 'green',
-                        data: passed
-                    },
-                    {
-                        label: 'Failed',
-                        backgroundColor: 'red',
-                        data: failed
-                    }
+                    { label: 'Passed', backgroundColor: 'green', data: passed },
+                    { label: 'Failed', backgroundColor: 'red', data: failed }
                 ]
             },
-            options: {
-                responsive: true,
-                scales: {
-                    y: { beginAtZero: true }
-                }
-            }
+            options: { responsive: true, scales: { y: { beginAtZero: true } } }
         });
     </script>
 </body>
